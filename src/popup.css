@@ -1,0 +1,166 @@
+body {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  background-color: #0d1117;
+  border-width: 1.5px;
+  border-style: solid;
+  box-sizing: border-box;
+  border-color: #30363d;
+}
+
+.btn {
+  background-color: #30a14e;
+  border: none;
+  width: 100%;
+  padding: 5px 16px;
+  color: #fff;
+  font-size: 14px;
+  font-family: "system-ui", "Segoe UI";
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition-duration: 0.2s;
+  transition-property: background-color, border-color, opacity;
+}
+
+.spacer {
+  width: 16px;
+}
+
+.popup {
+  width: 256px;
+  border-radius: 6px;
+}
+
+.btn:hover:enabled {
+  background-color: #40c463;
+}
+
+.btn:active:enabled {
+  opacity: 0.9;
+}
+
+.btn-dark {
+  background-color: #0d1117;
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: #30363d;
+}
+
+.btn-dark:hover:enabled {
+  background-color: #0d1117;
+  border-color: #8b949e;
+}
+
+.disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.btn-dark:active:enabled {
+  opacity: 0.8;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  padding-bottom: 0px;
+}
+
+.no-parse {
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  /* margin-bottom: 16px; */
+  /* width: 100%; */
+  padding: 12px;
+  border-bottom-color: #30363d;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  background-color: #161b22;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-top: 2px;
+  margin-left: 8px;
+  width: 14px;
+  height: 14px;
+}
+
+p {
+  color: #fff;
+  font-size: 14px;
+  font-family: "system-ui", "Segoe UI";
+  font-weight: 500;
+  padding: 0px;
+  margin: 0px;
+}
+
+.subtext {
+  color: #8b949e;
+  font-size: 12px;
+}
+
+.subheader {
+  color: #8b949e;
+}
+
+.subtext-white {
+  color: white;
+  font-size: 12px;
+}
+
+.comment-info-line {
+  flex-shrink: 1;
+  width: 2px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-left: 8px;
+  margin-right: 8px;
+  background-color: #30363d;
+}
+
+.comment-info-container {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.comment-info-inner {
+  display: flex;
+  /* background-color: purple; */
+  padding-top: 8px;
+}
+
+.comment-info {
+  flex: 1;
+}
+
+.highest-voted {
+  color: #8b949e;
+  font-size: 12px;
+}
+
+.highest-voted-container {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.comment-info-item {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
