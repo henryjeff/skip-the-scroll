@@ -4,3 +4,4 @@ dist/
 tmp/
 .vscode
 .github
+.DS_Store

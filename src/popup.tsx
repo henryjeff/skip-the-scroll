@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import AnimatedMount from "./mount_view";
 import "./popup.css";
-import GithubIcon from "../public/Github.svg";
+import GithubIcon from "../assets/Github.svg";
 interface CommentInfoItemProps {
   text?: string;
   data?: string;

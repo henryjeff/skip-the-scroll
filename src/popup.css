@@ -99,6 +99,11 @@ body {
   height: 14px;
 }
 
+/* a:hover {
+  cursor: pointer;
+  opacity: 0.8;
+} */
+
 p {
   color: #fff;
   font-size: 14px;
@@ -106,6 +111,7 @@ p {
   font-weight: 500;
   padding: 0px;
   margin: 0px;
+  cursor: default;
 }
 
 .subtext {
