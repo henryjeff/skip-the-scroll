@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import AnimatedMount from "./mount_view";
 import "./popup.css";
-// import rectangle from "./Github.svg";
 import GithubIcon from "../public/Github.svg";
 interface CommentInfoItemProps {
   text?: string;
@@ -48,7 +47,6 @@ const Popup = () => {
         "/" +
         `${d.getFullYear()}`.slice(-2)
     );
-    // alert(d.getDate() + " " + d.getFullYear() + " " + d.getMonth());
   }, [currentComment]);
 
   useEffect(() => {
@@ -116,7 +114,6 @@ const Popup = () => {
             <GithubIcon className="icon" />
           </a>
         </div>
-        {/* <img src={GithubIcon} style={{ width: 50, height: 50 }} /> */}
         <p className="subtext">1.0.0</p>
       </div>
       <div>
