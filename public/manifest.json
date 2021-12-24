@@ -2,8 +2,8 @@
   "manifest_version": 3,
 
   "name": "Skip the Scroll",
-  "description": "Tired of scrolling through hundreds of github issue comments to find that one magical response? Skip the scroll is a simple chrome extension that sorts github issue comments for you and allows you to iterate through them based on their social reactions.",
-  "version": "1.0",
+  "description": "Tired of scrolling through hundreds of Github issue comments to find that one magical response? Skip the scroll is here to help!",
+  "version": "1.0.0",
 
   "options_ui": {
     "page": "options.html"
@@ -23,9 +23,5 @@
 
   "permissions": [
     "storage"
-  ],
-
-  "host_permissions": [
-    "<all_urls>"
   ]
 }
