@@ -4,8 +4,8 @@ chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
   if (msg.type === "loadComments") {
     const _comments = parseComments();
     comments = _comments;
-    console.log(comments);
-    sendResponse(_comments);
+    sendResponse(comments);
+    return true;
   }
   if (msg.type === "scrollTo") {
     const commentData = comments[Number(msg.index)];
@@ -19,8 +19,10 @@ chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
       // @ts-ignore
       commentData.comment.style = "box-shadow: 0px 0px 0px 1.5px #2BA44E;";
       sendResponse(commentData);
+      return true;
     }
   }
+  return true;
 });
 
 type CommentData = {
@@ -33,7 +35,9 @@ const parseComments = () => {
   const comments: CommentData[] = [];
 
   // Get all posts on the page
-  const commentElements = document.getElementsByClassName("timeline-comment");
+  const commentElements = document.getElementsByClassName(
+    "timeline-comment comment"
+  );
 
   // All upvote emojis
   const upvoteEmojis = ["👍", "😄", "🎉", "🚀", "❤️"];
@@ -60,8 +64,7 @@ const parseComments = () => {
         .getElementsByClassName("js-timestamp")[0]
         .children[0].getAttribute("datetime")!
     );
-
-    comments.push({ comment, upvotes: totalUpvotes, timestamp });
+    comments.push({ comment, upvotes: totalUpvotes, timestamp: timestamp });
   });
 
   sortComments(comments);

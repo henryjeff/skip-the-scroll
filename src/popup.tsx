@@ -110,14 +110,17 @@ const Popup = () => {
       <div className="header">
         <div className="header-left">
           <p>Skip the Scroll</p>
-          <a target="_blank" href={"https://google.com"}>
+          <a
+            target="_blank"
+            href={"https://github.com/henryjeff/skip-the-scroll"}
+          >
             <GithubIcon className="icon" />
           </a>
         </div>
         <p className="subtext">1.0.0</p>
       </div>
       <div>
-        {comments.length > 0 ? (
+        {comments && comments.length > 0 ? (
           <div className="buttons">
             <button
               className={`btn-dark btn  ${!hasLast && "disabled"}`}
@@ -141,7 +144,7 @@ const Popup = () => {
           </div>
         )}
       </div>
-      {comments.length > 0 ? (
+      {comments && comments.length > 0 ? (
         <div className="comment-info-container">
           <p className="subtext">Comment Information:</p>
           <div className="comment-info-inner">
