@@ -10,8 +10,11 @@ chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
   if (msg.type === "scrollTo") {
     const commentData = comments[Number(msg.index)];
     if (commentData) {
-      commentData.comment.scrollIntoView();
-      window.scrollBy(0, -128);
+      const y =
+        commentData.comment.getBoundingClientRect().top +
+        window.pageYOffset +
+        -128;
+      window.scrollTo({ top: y, behavior: "smooth" });
       comments.forEach((comment) => {
         // @ts-ignore
         comment.comment.style = "box-shadow: 0px 0px 0px 0px";
