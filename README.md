@@ -4,6 +4,8 @@
 
 Tired of scrolling through hundreds of github issue comments to find that one magical response? Skip the scroll is a simple chrome extension that sorts github issue comments for you and allows you to iterate through them based on their social reactions.
 
+[Get extension on the Chrome Web store](https://chrome.google.com/webstore/detail/skip-the-scroll/mfehannpjmgfagldoilpngeoecdfgmnd)
+
 ## Prerequisites
 
 - [node + npm](https://nodejs.org/) (Current Version)
